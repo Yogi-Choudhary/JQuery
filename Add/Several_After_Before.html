@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+function afterText() {
+    var txt1 = "<b>I </b>";                   // Create element with HTML
+    var txt2 = $("<i></i>").text("love ");    // Create with jQuery
+    var txt3 = document.createElement("b");   // Create with DOM
+    txt3.innerHTML = "yogi!";
+    $("img").after(txt1, txt2, txt3);      // Insert new elements after img
+}
+</script>
+</head>
+<body bgcolor="E6E6FA">
+	<center>
+
+<img src="/root/Downloads/35145918_390615481439548_5338801347162537984_n.jpg" alt="jQuery" width="100" height="140">
+
+<p>Click the button to insert text after the image.</p>
+
+<button onclick="afterText()">Insert after</button>
+</center>
+</body>
+</html>
+

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+		</script>
+		<script>
+			$(document).ready(function(){
+				$("button").click(function(){
+					$("p").toggle(1000);
+				});
+			});
+		</script>
+		<style>
+                  #button {background-color: black;
+			  color: white;
+		  }
+		  #p1 {color: red;}
+		  #p2 {color: blue;}
+		</style>
+	</head>
+	<body bgcolor="E6E6FA">
+		<center>
+		<button id="button">Toggle between hiding and showing the paragraphs</button>
+		<p id="p1">This is a paragraph with little content.</p>
+		<p id="p2">This is anothe small paragraph.</p>
+		</center>
+	</body>
+</html>
